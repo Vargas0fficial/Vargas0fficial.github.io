@@ -1,0 +1,60 @@
+:root {
+  --animation-speed: 2s;
+  --background-color: #212121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-color);
+  font-family: var(--font);
+}
+.heart {
+  animation: heartbeat var(--animation-speed) infinite;
+  user-select: none;
+}
+
+.heart img {
+  width: 150px;
+}
+.header h1 { 
+  font-family: sans-serif; 
+  color: aliceblue;
+}
+.header2 h3 { 
+  color:wheat;
+  font-family: sans-serif;
+}
+.header3 h4{ 
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: beige;
+}
+/* Animation */
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
